@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-PM-0uZ">
+                                <rect key="frame" x="229" y="49" width="47" height="30"/>
+                                <state key="normal" title="Begain">
+                                    <color key="titleColor" red="1" green="0.99982413503976175" blue="0.99334641892772702" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="begainPing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7g2-kE-DC0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14z-sF-NLH">
+                                <rect key="frame" x="56" y="49" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1pW-fC-lLj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LMb-2G-m4f">
+                                <rect key="frame" x="40" y="99" width="520" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLH-Q7-wjs">
+                                <rect key="frame" x="301" y="49" width="30" height="30"/>
+                                <state key="normal" title="End">
+                                    <color key="titleColor" red="1" green="0.99982413503976175" blue="0.99334641892772702" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endPing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ke4-IY-fqx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.076573309835749948" green="0.2887390320037066" blue="0.41881009615384612" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nLH-Q7-wjs" firstAttribute="centerY" secondItem="kxC-PM-0uZ" secondAttribute="centerY" id="95Y-AN-ixY"/>
+                            <constraint firstItem="kxC-PM-0uZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="14z-sF-NLH" secondAttribute="trailing" constant="20" id="9kF-rJ-XKV"/>
+                            <constraint firstItem="14z-sF-NLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="D3u-6c-Wqs"/>
+                            <constraint firstItem="LMb-2G-m4f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="DXI-oD-6gl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LMb-2G-m4f" secondAttribute="bottom" constant="20" id="Jeu-f6-kho"/>
+                            <constraint firstItem="14z-sF-NLH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="SEm-MS-gk8"/>
+                            <constraint firstItem="LMb-2G-m4f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="e1q-YI-FQO"/>
+                            <constraint firstItem="kxC-PM-0uZ" firstAttribute="centerY" secondItem="14z-sF-NLH" secondAttribute="centerY" id="fvg-nR-gQi"/>
+                            <constraint firstItem="nLH-Q7-wjs" firstAttribute="leading" secondItem="kxC-PM-0uZ" secondAttribute="trailing" constant="25" id="iro-vU-mMR"/>
+                            <constraint firstItem="LMb-2G-m4f" firstAttribute="top" secondItem="14z-sF-NLH" secondAttribute="bottom" constant="20" id="t1i-k9-3UI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LMb-2G-m4f" secondAttribute="trailing" constant="20" id="xAG-mI-QUi"/>
+                            <constraint firstItem="kxC-PM-0uZ" firstAttribute="leading" secondItem="14z-sF-NLH" secondAttribute="trailing" constant="23" id="zGc-F3-qIJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="e1q-YI-FQO"/>
+                                <exclude reference="9kF-rJ-XKV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="inputView" destination="14z-sF-NLH" id="ip7-1C-wDx"/>
+                        <outlet property="outputView" destination="LMb-2G-m4f" id="vPD-ae-BeB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="244"/>
+        </scene>
+    </scenes>
+</document>
